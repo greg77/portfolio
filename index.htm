@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	
+    
+    <!--[if Internet Explorer]>
+    <link href="css/IE_input_bug.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+    
+	<title>Grégoire ROBERT| Accueil</title>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <script type="text/javascript" src="js/input_clear.js"></script>
+    
+    <!-- Lightbox -->
+    <script type="text/javascript">
+    $(function() {
+        $('.latest_gallery a').lightBox();
+    });
+    </script>
+    
+    <!-- Loading -->
+    <script type="text/javascript">
+    $(function() { 
+    $('.main_content, .main_navi').hide(); 
+    $(window).load( function() {  
+    $('#loader').fadeOut();
+    $('.main_content, .main_navi').fadeIn(2000); 
+    } );
+    } );
+                        
+    $(document).ready(function() {
+    $("body").css("display", "none");
+
+    $("body").fadeIn(2000);
+
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(1000, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}
+    });
+    </script>
+    
+</head>
+
+<body id="home">
+<div id="container">
+
+    <div class="stripe"></div>
+
+<div id="content">
+
+<!-- Header -->
+
+<div id="header">
+
+<div id="loader"><img alt="Loading.." src="img/ajax-loader.gif" /></div>
+
+<ul class="main_navi">
+        <li class="current"><a class="transition" href="index.htm">Accueil</a></li>
+        <li><a class="transition" href="about.htm">A propos</a></li>
+        <li><a class="transition" href="portfolio.htm">Mes travaux</a></li>       
+        <li><a class="transition" href="contacts.htm">Contact</a></li>
+</ul>
+
+<img alt="SimpleTape" class="logo" src="img/logo.png" />
+
+</div>
+
+
+
+<!-- Top Content -->
+<div class="main_content">
+<div id="top_content">
+
+ 
+    
+<div class="main_img">
+
+<!--    <a class="transition" href="view_work_dunord.htm"><img alt="This is home image" src="img/main_img1.png" /></a>
+    -->
+    
+     
+        <h1>Qui je suis?</h1>
+        <br />
+        <p style="font-size: 20px;">Je m'appelle Grégoire ROBERT et suis actuellement étudiant en deuxieme année de BTS SIO (Services Informatiques aux Organisations) au Lycée Léonard de Vinci.
+            <br/> Ce site est mon Portfolio.  <a class="transitional" href="contacts.htm">Me contacter</a></p>
+    
+</div> 
+
+</div>
+
+<!-- Our best work -->
+
+<div id="best_work">
+
+    <div class="best_work">
+    <h3>Mes meilleurs travaux</h3>
+    
+    <div><a class="transition" href="unavailable.html"><img alt="Best work" src="img/best_work/dunord_best.png" /></a>
+        <a class="transition" href="unavailable.html"><img alt="Best work" class="view" src="img/linz.png" /></a>
+    </div>
+    
+    <div><a class="transition" href="unavailable.html"><img alt="Best work" src="img/best_work/getap_best.png" /></a>
+        <a class="transition" href="unavailable.html"><img alt="Best work" class="view" src="img/linz.png" /></a>
+    </div>
+    
+    <div class="last_img"><a class="transition" href="unavailable.html"><img alt="Best work" src="img/best_work/comingsoon.jpg" /></a>
+        <a class="transition" href="unavailable.html"><img alt="Best work" class="view" src="img/linz.png" /></a>
+    </div>
+
+    
+    </div>
+      
+</div>
+<br/>
+    <div class="curent_project">    
+        <h3>Mes projets en cours</h3>
+
+        <table cellspacing="10px">
+    <tr>
+        <td>Projet JnetMap</td>
+        <td><progress value="60" max="100">60%</progress></td>
+    </tr>
+    <tr>
+        <td>Stage chez Skerou</td>
+        <td><progress value="33" max="100">33%</progress></td>
+    </tr>
+    <tr>
+        <td>Portfolio</td>
+        <td><progress value="20" max="100">20%</progress></td>
+    </tr>
+</table>
+
+</div>
+    
+<div id="footer">
+    &#169; Swaggy 2013 Tous droits réservés.
+    
+    <ul class="footer_navi">
+       <li class="current"><a class="transition" href="index.htm">Accueil</a></li>
+        <li><a class="transition" href="about.htm">A propos</a></li>
+        <li><a class="transition" href="portfolio.htm">Mes travaux</a></li>       
+        <li><a class="transition" href="contacts.htm">Contact</a></li>
+    </ul>
+
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

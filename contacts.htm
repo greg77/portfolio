@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="Nikita Belousov" />
+    
+    <!--[if Internet Explorer]>
+    <link href="css/IE_input_bug.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+    
+	<title>Grégoire ROBERT| Contact</title>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/input_clear.js"></script>
+    
+    <!-- Loading -->
+    <script type="text/javascript">
+    $(function() { 
+    $('.main_content, .main_navi').hide(); 
+    $(window).load( function() {  
+    $('#loader').fadeOut();
+    $('.main_content, .main_navi').fadeIn(2000); 
+    } );
+    } );
+                        
+    $(document).ready(function() {
+    $("body").css("display", "none");
+
+    $("body").fadeIn(2000);
+
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(1000, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}
+    });
+    </script>
+    
+</head>
+
+<body id="portfolio">
+<div id="container">
+
+    <div class="stripe"></div>
+
+<div id="content">
+
+<!-- Header -->
+
+<div id="header">
+
+<div id="loader"><img alt="Loading.." src="img/ajax-loader.gif" /></div>
+
+<ul class="main_navi">
+    <li><a class="transition" href="index.htm">Accueil</li>
+        <li><a class="transition" href="about.htm">A propos</a></li>
+        <li><a class="transition" href="portfolio.htm">Mes travaux</a></li>       
+        <li class="current"><a class="transition" href="contacts.htm">Contact</a></li>
+</ul>
+
+<a title="Back to home" href="index.htm"><img alt="SimpleTipe" class="logo" src="img/logo.png" /></a>
+
+</div>
+
+
+
+<!-- Top Content -->
+<div class="main_content">
+    
+   
+    <iframe width="900" height="200" frameborder="0" scrolling="no" marginheight="0"
+     marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=Dammarie-les-Lys&amp;aq=0&amp;oq=da&amp;sll=48.542105,2.6554&amp;sspn=0.060008,0.132523&amp;ie=UTF8&amp;hq=&amp;hnear=Dammarie-les-Lys,+Seine-et-Marne,+%C3%8Ele-de-France&amp;ll=48.542069,2.65543&amp;spn=0.06004,0.132523&amp;t=m&amp;z=13&amp;output=embed"></iframe>
+     
+    <div id="about_page">
+
+    <h2>Pour toutes demandes de projets, de renseignements, de partenariat, contactez-moi !</h2>
+    
+    
+    
+    </div>
+    
+    
+    <div class="contact_info">
+    <form class="contact_form" method="post" action="">
+        <h2>Formulaire</h2>
+        <input type="text" class="autoclear" name="name" value="Entrez votre nom"/> <br />
+        <input type="text" class="autoclear" name="mail" value="Entrez votre email"/> <br />
+        <textarea cols="30" rows="15" name="message"></textarea>
+        <div class="button_cont">
+        <input type="submit" value="Envoyer" />
+        </div>
+    </form>
+    
+    <div class="other_contacts">
+        <!--<div class="contact_item phone">643-356-24-00</div>-->
+        <div class="contact_item mail">gregoire.robert.77@gmail.com</div>
+        <!--<div class="contact_item twitter">@simple_tape</div>-->
+    
+    </div>
+    
+    </div>
+      
+<div id="footer">
+    &#169; Swaggy 2013 Tous droits réservés.
+    
+    <ul class="footer_navi">
+        <li><a class="transition" href="index.htm">Accueil</a></li>
+        <li><a class="transition" href="about.htm">A propos</a></li>
+        <li><a class="transition" href="portfolio.htm">Mes travaux</a></li>       
+        <li class="current"><a class="transition" href="contacts.htm">Contact</a></li>
+    </ul>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
